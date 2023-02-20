@@ -9,3 +9,9 @@ char (Character) : 2 byte
 
 
 Character are stored with its corresponding ASCII value for 'a' --> its '97' and for 'A' --> its '65';
+
+for example:
+
+char character = 'a';
+int output = character + 3; // Implicit type casting. Convert character data type to integer automatically.
+System.out.println(output); // Output is 100
