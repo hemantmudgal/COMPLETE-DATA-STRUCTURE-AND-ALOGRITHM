@@ -26,5 +26,18 @@ public class GettingInputFromConsole {
 
         System.out.println("Addition of two number is :" + output);
 
+
+        System.out.println("Enter name");
+        String name = scanner.next(); // Only consider first input or first token as input.
+        System.out.println("Name: " + name);
+        System.out.println("Enter anotherName");
+        String anotherName = scanner.nextLine(); // Takes input for the entire line.
+        System.out.println("AnotherName: " + anotherName);
+
+        //Taking character input:
+
+        char characterInput = scanner.next().charAt(0);
+
+
     }
 }
