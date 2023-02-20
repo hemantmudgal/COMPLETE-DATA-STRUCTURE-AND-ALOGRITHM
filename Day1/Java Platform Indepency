@@ -1,5 +1,0 @@
-Why Java Platform Independent:
-
-Compiler provides the .class file after compilation of .java code. This .java file is converted as machine code
-(Native Code) or binary code by JVM, By this behaviour it is executed in any operating system whether it is windows,
-Mac or Linux.

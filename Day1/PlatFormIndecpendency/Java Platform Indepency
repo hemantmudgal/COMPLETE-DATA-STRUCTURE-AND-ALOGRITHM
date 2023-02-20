@@ -1,0 +1,12 @@
+Why Java Platform Independent:
+
+Compiler provides the .class file after compilation of .java code. This .java file is converted as machine code
+(Native Code) or binary code by JVM, By this behaviour it is executed in any operating system whether it is windows,
+Mac or Linux.
+
+Why C++ is not platform independent:
+
+Because before executing on the hardware device these cpp files should be first compiled and should be converted in
+.exe or .out file for Mac. These .exe files not be same for all operating system. Because these files is generated
+by the compiler itself according to there corresponding operating system. So the executable file for windows should
+not be run on linux operating system.
