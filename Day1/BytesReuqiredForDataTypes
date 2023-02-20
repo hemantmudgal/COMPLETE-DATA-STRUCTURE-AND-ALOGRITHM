@@ -15,3 +15,6 @@ for example:
 char character = 'a';
 int output = character + 3; // Implicit type casting. Convert character data type to integer automatically.
 System.out.println(output); // Output is 100
+
+char explicitTyped = (char) output; //explicit conversion take place
+System.out.println(explicitTyped); // output is 'c'
