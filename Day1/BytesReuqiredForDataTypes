@@ -5,4 +5,4 @@ long (Long) : 8 bytes
 float (Float) : 4 bytes
 double (Double) : 8 bytes
 boolean (Boolean) : Not Define
-char (Character) : 1 byte
+char (Character) : 2 byte
