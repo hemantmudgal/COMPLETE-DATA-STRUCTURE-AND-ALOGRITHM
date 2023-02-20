@@ -6,3 +6,6 @@ float (Float) : 4 bytes
 double (Double) : 8 bytes
 boolean (Boolean) : Not Define
 char (Character) : 2 byte
+
+
+Character are stored with its corresponding ASCII value for 'a' --> its '97' and for 'A' --> its '65';
