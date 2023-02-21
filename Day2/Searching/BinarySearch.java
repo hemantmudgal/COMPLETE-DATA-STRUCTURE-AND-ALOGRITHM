@@ -13,24 +13,21 @@ public class BinarySearch {
         int[] sortedArray = {1, 4, 6, 10, 15, 20, 21, 24};
         int value = 24;
         int outputIndex = findIndexUsingBinarySearch(sortedArray, value);
-        System.out.println("Index of " + value + " is :" + outputIndex);
+        System.out.println("Index of " + value + " is : " + outputIndex);
     }
 
-    private static int findIndexUsingBinarySearch(int[] sortedArray, int value){
+    private static int findIndexUsingBinarySearch(int[] sortedArray, int value) {
         int startIndex = 0;
-        int endIndex = sortedArray.length -1;
+        int endIndex = sortedArray.length - 1;
 
-        while(startIndex <= endIndex){
+        while (startIndex <= endIndex) {
             int midIndex = (startIndex + endIndex) / 2;
-
-            if(sortedArray[midIndex] == value){
-                return midIndex;
-            }
-            else if(sortedArray[midIndex] < value){
+            if (sortedArray[midIndex] < value) {
                 startIndex = midIndex + 1;
-            }
-            else if(sortedArray[midIndex] > value){
+            } else if (sortedArray[midIndex] > value) {
                 endIndex = midIndex - 1;
+            } else {
+                return midIndex;
             }
         }
         return -1;
