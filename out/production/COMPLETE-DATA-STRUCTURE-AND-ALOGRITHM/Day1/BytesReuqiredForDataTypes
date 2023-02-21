@@ -5,4 +5,23 @@ long (Long) : 8 bytes
 float (Float) : 4 bytes
 double (Double) : 8 bytes
 boolean (Boolean) : Not Define
-char (Character) : 1 byte
+char (Character) : 2 byte
+
+
+Character are stored with its corresponding ASCII value for 'a' --> its '97' and for 'A' --> its '65';
+
+for example:
+
+char character = 'a';
+int output = character + 3; // Implicit type casting. Convert character data type to integer automatically.
+System.out.println(output); // Output is 100
+
+char explicitTyped = (char) output; //explicit conversion take place
+System.out.println(explicitTyped); // output is 'c'
+
+
+All floating point value represented as a double data type in java. So it required 8 bytes of memory.
+For representing float data type 'f' is required after the value of float.
+example: float value = 3f; // 4 bytes of memory;
+         float anotherValue = 3; // Through an error. Treated as double so for that reason 3 is represented in 8 bytes of memory and this
+                                 //will not store in 4 bytes of memory.

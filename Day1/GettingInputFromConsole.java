@@ -12,9 +12,9 @@ import java.util.Scanner;
 public class GettingInputFromConsole {
     public static void main(String[] args) {
 /*
-        A simple text scanner which can parse primitive types and strings using regular expressions.
+        A simple text scanner which can parse primitive types using regular expressions.
         A Scanner breaks its input into tokens using a delimiter pattern, which by default matches whitespace.
-        The resulting tokens may then be converted into values of different types using the various next methods.*/
+        The resulting tokens may then be converted into val ues of different types using the various next methods.*/
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter first number");
