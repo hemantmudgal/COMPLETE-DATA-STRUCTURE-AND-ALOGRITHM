@@ -17,6 +17,11 @@ public class LinearSearch {
         System.out.println("Index of value in array is: " + outputIndex);
     }
 
+    /*
+    Array :- When we declare array its initialize its default values in range 0 to n-1.
+    --> Every array store reference of 0th index and length of array
+    */
+
     private static int FindValueInArray(int[] arrayInput, int valueToBeSearched) {
         for(var i = 0; i < arrayInput.length; i++){
             if(arrayInput[i] == valueToBeSearched){
