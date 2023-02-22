@@ -23,6 +23,11 @@ public class LinearSearch {
     */
 
     private static int FindValueInArray(int[] arrayInput, int valueToBeSearched) {
+
+        /*
+        * Just traversing through the complete array and where ever we found out the value
+        * then return the index of that array index
+        */
         for(var i = 0; i < arrayInput.length; i++){
             if(arrayInput[i] == valueToBeSearched){
                 return i;

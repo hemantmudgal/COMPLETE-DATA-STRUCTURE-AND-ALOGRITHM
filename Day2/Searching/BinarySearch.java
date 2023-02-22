@@ -16,15 +16,26 @@ public class BinarySearch {
         System.out.println("Index of " + value + " is : " + outputIndex);
     }
 
+    /*
+    * Method for find out the value in the sorted array using binary search.
+    * */
     private static int findIndexUsingBinarySearch(int[] sortedArray, int value) {
-        int startIndex = 0;
-        int endIndex = sortedArray.length - 1;
+        int startIndex = 0; // starting index of the array
+        int endIndex = sortedArray.length - 1; // ending index of the array
 
+        /*
+        (startIndex <= endIndex)
+        only check where end index is lesser than the start index of the array.
+        * */
         while (startIndex <= endIndex) {
+            // Calculating mid-index for each start and end index until we found our value in the given array.
             int midIndex = (startIndex + endIndex) / 2;
+            // If value is greater than the mid-index value of the array search for the right part of the array.
             if (sortedArray[midIndex] < value) {
                 startIndex = midIndex + 1;
-            } else if (sortedArray[midIndex] > value) {
+            }
+            // If value is lesser than the mid-index value of the array search for the left part of the array.
+            else if (sortedArray[midIndex] > value) {
                 endIndex = midIndex - 1;
             } else {
                 return midIndex;
